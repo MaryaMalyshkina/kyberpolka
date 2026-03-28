@@ -1,0 +1,39 @@
+8.7s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.7s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.7s 3 0.00s - to python to disable frozen modules.
+8.7s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+9.6s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+9.6s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+9.6s 7 0.00s - to python to disable frozen modules.
+9.6s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+13.5s 9 Requirement already satisfied: polars in /usr/local/lib/python3.12/dist-packages (1.35.2)
+13.5s 10 Requirement already satisfied: polars-runtime-32==1.35.2 in /usr/local/lib/python3.12/dist-packages (from polars) (1.35.2)
+21.1s 11 PyArrow is installed. Version: 23.0.1
+21.6s 12 shape: (41, 2)
+21.6s 13 ┌─────────────┬──────────┐
+21.6s 14 │ Target      ┆ Mean     │
+21.6s 15 │ ---         ┆ ---      │
+21.6s 16 │ str         ┆ f64      │
+21.6s 17 ╞═════════════╪══════════╡
+21.6s 18 │ target_1_1  ┆ 0.010396 │
+21.6s 19 │ target_1_2  ┆ 0.003425 │
+21.6s 20 │ target_1_3  ┆ 0.023785 │
+21.6s 21 │ target_1_4  ┆ 0.023429 │
+21.6s 22 │ target_1_5  ┆ 0.001839 │
+21.6s 23 │ …           ┆ …        │
+21.6s 24 │ target_9_5  ┆ 0.006583 │
+21.6s 25 │ target_9_6  ┆ 0.223072 │
+21.6s 26 │ target_9_7  ┆ 0.077248 │
+21.6s 27 │ target_9_8  ┆ 0.010433 │
+21.6s 28 │ target_10_1 ┆ 0.315052 │
+21.6s 29 └─────────────┴──────────┘
+28.7s 30 Тренировочные данные: (750000, 1301)
+28.7s 31 Тестовые данные: (250000, 1301)
+41673.3s 32 /usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+41673.3s 33 cells[i][c] = re.sub('\\\\\|', '|', cell)
+41673.6s 34 /usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+41673.6s 35 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+41674.4s 36 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+41674.9s 37 [NbConvertApp] Writing 18969 bytes to __notebook__.ipynb
+41678.4s 38 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+41679.7s 39 [NbConvertApp] Writing 294532 bytes to __results__.html
