@@ -16,7 +16,8 @@
 Метрика соревнования — Macro Averaged ROC-AUC. Для multi-label это эквивалентно простому усреднению ROC-AUC по каждому классу. 
 
 Структура проекта:
-project_root//
+```
+project_root/
 ├── data/
 │   ├── raw/
 │   └── processed/
@@ -31,3 +32,13 @@ project_root//
 ├── tests/
 ├── .gitignore
 └── requirements.txt
+```
+```
+plan_points/
+
+├── Doors_windows.ipynb          # Google Colab тетрадь с обучением и тестированием модели
+├── best.pt                      # веса обученной модели yolo11n.pt
+├── example.png                  # скриншот интерфейса приложения Gradio
+├── README.md                    # документация по проекту
+└── gradio.ipynb                 # Google Colab тетрадь для демонстрации работы модели с помощью Gradio
+```
