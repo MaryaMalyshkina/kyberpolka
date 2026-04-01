@@ -14,3 +14,20 @@
 Предсказания необходимо построить для всех 250,000 клиентов в тестовых данных. 
 
 Метрика соревнования — Macro Averaged ROC-AUC. Для multi-label это эквивалентно простому усреднению ROC-AUC по каждому классу. 
+
+Структура проекта:
+project_root//
+├── data/
+│   ├── raw/
+│   └── processed/
+├── models/
+│   ├── catboost/
+│   └── lightgbm/
+├── notebooks/
+├── src/
+│   ├── preprocessing/
+│   └── training/
+├── logs/
+├── tests/
+├── .gitignore
+└── requirements.txt
