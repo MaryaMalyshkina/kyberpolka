@@ -69,7 +69,15 @@ models/ — обученные модели.
 
 notebooks/ kyberpolka-dataset-explore.ipynb: первичный анализ данных, построение графиков, первичный анализ важности признаков для дальнейшего формирования тренировочной выборки и обучения моделей
 
-src/ preprocessing/ kyberpolka-dataset-creation.ipynb — переиспользуемый код. Когда ты понял, как работает предобработка в ноутбуке, переноси логику в src/preprocessing/clean_data.py. Когда обкатал обучение модели, пиши src/training/train_catboost.py. Так код становится модульным: можно запускать скрипты из командной строки, писать на них unit-тесты, импортировать функции в разных местах проекта. 
+src/ preprocessing/ kyberpolka-dataset-creation.ipynb — код для создания тренировочной и тестовой выборки из основного и дополнительного набора признаков на основании отбора наиболее важных признаков.
+src/ preprocessing/ kyberpolka-hist-1300-optuna.ipynb — подбор гиперпараметров для HistGradientBoostingClassifier с помощью Optuna.
 
 
-logs/ — текстовые логи обучения, метрики экспериментов, трекинг параметров. Если используешь MLflow или Weights & Biases, они создают свои служебные папки — их тоже можно положить сюда или в отдельную experiments/. tests/ — pytest-тесты для функций из src/. На начальном этапе можно обойтись без них, но когда проект растёт, тесты спасают от регрессий: изменил функцию заполнения пропусков — запустил тесты и сразу увидел, что сломалось. Теперь про разделение raw и processed. Принцип простой: raw-данные неприкасаемы. Если house_price_predict.csv содержит опечатку в названии признака или там есть строки с нулевой площадью, ты не правишь CSV руками.
+src/ training/ kyberpolka-cat-features-1600.ipynb — обучение  CatBoostClassifier на наборе из 1600 наиболее важных признаков,
+src/ training/ kyberpolka-hist-1600.ipynb — обучение  multi‑label (HistGradientBoostingClassifier) на наборе из 1600 наиболее важных признаков
+src/ training/ kyberpolka-optuna-train.ipynb — обучение  multi‑label (HistGradientBoostingClassifier) с гиперпараметрами, подобранными с помощью Optuna, на наборе из 1300 наиболее важных признаков
+src/ training/ kyberpolka-xgb-features-1600.ipynb — обучение  multi‑label (XGBClassifierr) на наборе из 1600 наиболее важных признаков
+src/ training/ kyberpolka-pyboost.ipynb — обучение SketchBoost на наборе из 1300 наиболее важных признаков.
+
+
+logs/ — текстовые логи обучения. 
