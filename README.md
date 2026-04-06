@@ -48,14 +48,10 @@ project_root/
 │   ├── raw/
 │   └── processed/
 ├── models/
-│   ├── catboost/
-│   └── lightgbm/
 ├── notebooks/
-├── src/
 │   ├── preprocessing/
 │   └── training/
 ├── logs/
-├── tests/
 ├── .gitignore
 └── requirements.txt
 ```
