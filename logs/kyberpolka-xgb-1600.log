@@ -1,0 +1,36 @@
+11.4s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+11.4s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+11.4s 3 0.00s - to python to disable frozen modules.
+11.4s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+12.2s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+12.2s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+12.2s 7 0.00s - to python to disable frozen modules.
+12.2s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+16.9s 9 Requirement already satisfied: polars in /usr/local/lib/python3.12/dist-packages (1.35.2)
+16.9s 10 Requirement already satisfied: polars-runtime-32==1.35.2 in /usr/local/lib/python3.12/dist-packages (from polars) (1.35.2)
+24.4s 11 PyArrow is installed. Version: 23.0.1
+9281.1s 12 /usr/local/lib/python3.12/dist-packages/xgboost/core.py:751: UserWarning: [09:37:06] WARNING: /__w/xgboost/xgboost/src/common/error_msg.cc:62: Falling back to prediction using DMatrix due to mismatched devices. This might lead to higher memory usage and slower performance. XGBoost is running on: cuda:0, while the input data is on: cpu.
+9281.1s 13 Potential solutions:
+9281.1s 14 - Use a data structure that matches the device ordinal in the booster.
+9281.1s 15 - Set the device for booster before call to inplace_predict.
+9281.1s 16 
+9281.1s 17 This warning will only be shown once.
+9281.1s 18 
+9281.1s 19 return func(**kwargs)
+9281.1s 20 
+9281.1s 21 /usr/local/lib/python3.12/dist-packages/xgboost/core.py:751: UserWarning: [09:37:06] WARNING: /__w/xgboost/xgboost/src/common/error_msg.cc:62: Falling back to prediction using DMatrix due to mismatched devices. This might lead to higher memory usage and slower performance. XGBoost is running on: cuda:0, while the input data is on: cpu.
+9281.1s 22 Potential solutions:
+9281.1s 23 - Use a data structure that matches the device ordinal in the booster.
+9281.1s 24 - Set the device for booster before call to inplace_predict.
+9281.1s 25 
+9281.1s 26 This warning will only be shown once.
+9281.1s 27 
+9281.1s 28 return func(**kwargs)
+9889.2s 29 /usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+9889.2s 30 cells[i][c] = re.sub('\\\\\|', '|', cell)
+9889.4s 31 /usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+9889.4s 32 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+9890.1s 33 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+9890.4s 34 [NbConvertApp] Writing 40165 bytes to __notebook__.ipynb
+9892.8s 35 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+9893.7s 36 [NbConvertApp] Writing 307328 bytes to __results__.html
