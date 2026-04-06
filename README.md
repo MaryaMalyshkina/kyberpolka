@@ -70,13 +70,18 @@ models/ — обученные модели.
 notebooks/ kyberpolka-dataset-explore.ipynb: первичный анализ данных, построение графиков, первичный анализ важности признаков для дальнейшего формирования тренировочной выборки и обучения моделей
 
 src/ preprocessing/ kyberpolka-dataset-creation.ipynb — код для создания тренировочной и тестовой выборки из основного и дополнительного набора признаков на основании отбора наиболее важных признаков.
+
 src/ preprocessing/ kyberpolka-hist-1300-optuna.ipynb — подбор гиперпараметров для HistGradientBoostingClassifier с помощью Optuna.
 
 
 src/ training/ kyberpolka-cat-features-1600.ipynb — обучение  CatBoostClassifier на наборе из 1600 наиболее важных признаков,
-src/ training/ kyberpolka-hist-1600.ipynb — обучение  multi‑label (HistGradientBoostingClassifier) на наборе из 1600 наиболее важных признаков
-src/ training/ kyberpolka-optuna-train.ipynb — обучение  multi‑label (HistGradientBoostingClassifier) с гиперпараметрами, подобранными с помощью Optuna, на наборе из 1300 наиболее важных признаков
-src/ training/ kyberpolka-xgb-features-1600.ipynb — обучение  multi‑label (XGBClassifierr) на наборе из 1600 наиболее важных признаков
+
+src/ training/ kyberpolka-hist-1600.ipynb — обучение  multi‑label (HistGradientBoostingClassifier) на наборе из 1600 наиболее важных признаков,
+
+src/ training/ kyberpolka-optuna-train.ipynb — обучение  multi‑label (HistGradientBoostingClassifier) с гиперпараметрами, подобранными с помощью Optuna, на наборе из 1300 наиболее важных признаков,
+
+src/ training/ kyberpolka-xgb-features-1600.ipynb — обучение  multi‑label (XGBClassifierr) на наборе из 1600 наиболее важных признаков,
+
 src/ training/ kyberpolka-pyboost.ipynb — обучение SketchBoost на наборе из 1300 наиболее важных признаков.
 
 
