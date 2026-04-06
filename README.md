@@ -63,22 +63,26 @@ models/ — обученные модели.
 
 Эти папки находятся лишь формально: исходные данные и модели слишком велики для git.
 
-notebooks/ preprocessing/ kyberpolka-dataset-explore.ipynb: первичный анализ данных, построение графиков, первичный анализ важности признаков для дальнейшего формирования тренировочной выборки и обучения моделей
+notebooks/ preprocessing/ 
 
-notebooks/ preprocessing/ kyberpolka-dataset-creation.ipynb — код для создания тренировочной и тестовой выборки из основного и дополнительного набора признаков на основании отбора наиболее важных признаков.
+- kyberpolka-dataset-explore.ipynb: первичный анализ данных, построение графиков, первичный анализ важности признаков для дальнейшего формирования тренировочной выборки и обучения моделей
 
-notebooks/ preprocessing/ kyberpolka-hist-1300-optuna.ipynb — подбор гиперпараметров для HistGradientBoostingClassifier с помощью Optuna.
+- kyberpolka-dataset-creation.ipynb: код для создания тренировочной и тестовой выборки из основного и дополнительного набора признаков на основании отбора наиболее важных признаков.
+
+- kyberpolka-hist-1300-optuna.ipynb: подбор гиперпараметров для HistGradientBoostingClassifier с помощью Optuna.
 
 
-notebooks/ training/ kyberpolka-cat-features-1600.ipynb — обучение  CatBoostClassifier на наборе из 1600 наиболее важных признаков,
+notebooks/ training/ 
 
-notebooks/ training/ kyberpolka-hist-1600.ipynb — обучение  multi‑label (HistGradientBoostingClassifier) на наборе из 1600 наиболее важных признаков,
+- kyberpolka-cat-features-1600.ipynb — обучение  CatBoostClassifier на наборе из 1600 наиболее важных признаков,
 
-notebooks/ training/ kyberpolka-optuna-train.ipynb — обучение  multi‑label (HistGradientBoostingClassifier) с гиперпараметрами, подобранными с помощью Optuna, на наборе из 1300 наиболее важных признаков,
+- kyberpolka-hist-1600.ipynb — обучение  multi‑label (HistGradientBoostingClassifier) на наборе из 1600 наиболее важных признаков,
 
-notebooks/ training/ kyberpolka-xgb-features-1600.ipynb — обучение  multi‑label (XGBClassifierr) на наборе из 1600 наиболее важных признаков,
+-  kyberpolka-optuna-train.ipynb — обучение  multi‑label (HistGradientBoostingClassifier) с гиперпараметрами, подобранными с помощью Optuna, на наборе из 1300 наиболее важных признаков,
 
-notebooks/ training/ kyberpolka-pyboost.ipynb — обучение SketchBoost на наборе из 1300 наиболее важных признаков.
+-  kyberpolka-xgb-features-1600.ipynb — обучение  multi‑label (XGBClassifierr) на наборе из 1600 наиболее важных признаков,
+
+-  kyberpolka-pyboost.ipynb — обучение SketchBoost на наборе из 1300 наиболее важных признаков.
 
 
 logs/ — текстовые логи обучения. 
