@@ -28,10 +28,10 @@
 
 В решении использовались модели:
 
-CatBoostClassifier,
- multi‑label модель на основе HistGradientBoostingClassifier,
- multi‑label модель на основе XGBoost XGBClassifier,
-SketchBoost от pyboost.
+- CatBoostClassifier,
+- multi‑label модель на основе HistGradientBoostingClassifier,
+- multi‑label модель на основе XGBoost XGBClassifier,
+- SketchBoost от pyboost.
 
 Отдельно подбирались гиперпараметры модели HistGradientBoosting с помощью Optuna.
 
